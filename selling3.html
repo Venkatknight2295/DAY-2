@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SELLING</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+<body class="bg-gray-100">
+	<header class="bg-white shadow">
+		<nav class="container mx-auto px-4">
+			<div class="flex justify-between items-center py-4">
+				<a href="#" class="text-lg font-bold text-gray-900">SELLING</a>
+				<ul class="flex space-x-4">
+					<li><a href="#" class="text-gray-900 hover:text-gray-700">Home</a></li>
+					<li><a href="#" class="text-gray-900 hover:text-gray-700">Shop</a></li>
+					<li><a href="#" class="text-gray-900 hover:text-gray-700">Sell</a></li>
+					<li><a href="#" class="text-gray-900 hover:text-gray-700">Cart</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="container mx-auto py-8">
+		<h1 class="text-4xl font-bold text-gray-900 mb-8">Sell Your Product</h1>
+		<div class="max-w-md mx-auto">
+			<form class="bg-white shadow-lg rounded px-8 pt-6 pb-8 mb-4">
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="title">
+						Title
+					</label>
+					<input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="title" type="text" placeholder="Enter title">
+				</div>
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="description">
+						Description
+					</label>
+					<textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="description" placeholder="Enter description"></textarea>
+				</div>
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="price">
+						Price
+					</label>
+					<div class="relative rounded-md shadow-sm">
+						<span class="inline-flex items-center px-3 rounded-l-md border rounded-r-md border-r-0   border-gray-300 bg-gray-50  text-gray-500 text-sm w-96 ">
+							₹
+						
+						<head>
+						<style>
+                            input::-webkit-outer-spin-button,
+                             input::-webkit-inner-spin-button {
+                                -webkit-appearance: none;
+                                   margin: 0;
+                               }
+                        </style>
+                        </head>
+                        <input type="number" value="5" class="w-96">
+                        </span>
+						
+						
+						</div>
+				</div>
+				<div class="mb-4">
+					<label class="block text-gray-700 font-bold mb-2" for="image">
+						Image
+					</label>
+					<div class="flex items-center justify-center bg-grey-lighter">
+						<label class="flex flex-col rounded-lg border-4 border-dashed w-full h-32 p-10 group text-center">
+							<div class="h-full w-full text-center flex flex-col items-center justify-center">
+								<div class="mb-1">
+									<svg class="w-10 h-10 text-gray-400 group-hover:text-gray-600"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+										<path fill-rule="evenodd" d="M15.071 4.929a4 4 0 00-5.657 0L2 11.657V16a2 2 0 002 2h12a2 2 0 002-2v-4.343l-2.929-2.928zM14.243 13.757H5.757L10 9.514l4.243 4.243zm-8.486-6.314a2 2 0 110 2.828 2 2 0 010-2.828z" clip-rule="evenodd" />
+									</svg>
+								</div>
+								<p class="pointer-none text-gray-500 group-hover:text-gray-600">Click here to upload an image</p>
+								<input type="file" class="hidden">
+							</div>
+						</label>
+					</div>
+				</div>
+				<div class="mb-4">
+					<button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+	</main>
+	</body>
+</html>
